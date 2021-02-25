@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Empresa.Models;
 
 namespace Empresa.Data
 {
@@ -12,5 +13,6 @@ namespace Empresa.Data
             : base(options)
         {
         }
+        public DbSet<Empresa.Models.Product> Product { get; set; }
     }
 }
