@@ -39,8 +39,10 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.URL_Imagen)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.URL_Imagen)
+        <dd class="col-sm-10">
+            @{ if (Model.URL_Imagen != null)
+                {
+        <img src='@Html.DisplayFor(model => model.URL_Imagen)' style="width:50%"> }}
         </dd>
     </dl>
     
