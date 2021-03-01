@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label class="control-label">Nombre:</label>
+                <input name="NOMBRE" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Apellido: </label>
+                <input name="APELLIDO" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Email: </label>
+                <input name="EMAIL" type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Telefono: </label>
+                <input name="TELEFONO" type="tel" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="control-label">Mensaje: </label>
+<textarea name="MENSAJE" class="form-control" cols="10" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ENVIAR" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
