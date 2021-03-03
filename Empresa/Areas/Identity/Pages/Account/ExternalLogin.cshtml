@@ -5,13 +5,13 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<h4 id="external-login-title">Asociar tu @Model.ProviderDisplayName cuenta.</h4>
+<h4 id="external-login-title">Asociar tu cuenta de @Model.ProviderDisplayName.</h4>
 <hr />
 
 <p id="external-login-description" class="text-info">
     Te has autenticado correctamente con <strong>@Model.ProviderDisplayName</strong>.
-    @*Please enter an email address for this site below and click the Register button to finish
-    logging in.*@
+    <br>
+    Por favor, introduce tu correo electrónico de Facebook abajo y has clic en el botón Acceder para iniciar sesión.
 </p>
 
 <div class="row">
@@ -23,7 +23,7 @@
                 <input asp-for="Input.Email" class="form-control" />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Crear</button>
+            <button type="submit" class="btn btn-primary">Acceder</button>
         </form>
     </div>
 </div>

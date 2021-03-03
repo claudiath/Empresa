@@ -66,6 +66,12 @@ namespace Empresa
                 options.SlidingExpiration = true;
             });
 
+            object p = services.AddAuthentication().AddFacebook(facebookOption =>
+            {
+                facebookOption.AppId = Configuration["Authentication:Facebook:AppId"];
+                facebookOption.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            });
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
